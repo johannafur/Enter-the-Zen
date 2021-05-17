@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-camera wasd-controls-enabled="false">
+        <a-cursor geometry="primitive: ring; radiusInner: 0.09; radiusOuter: 0.1" color="#FFF"></a-cursor>
+      </a-camera>
+
+      <a-assets>
+        <audio id="nature" src="https://cdn.glitch.com/39c57c54-528b-451c-8f18-e823cb6ec564%2Frelax.mp3?v=1610555166474"></audio>
+        <img id="sky" src="https://cdn.glitch.com/39c57c54-528b-451c-8f18-e823cb6ec564%2Flauter_waterfall.jpg?v=1610388966274">
+        <img id="click" src="https://cdn.glitch.com/39c57c54-528b-451c-8f18-e823cb6ec564%2FCLICK%20HERE%20TO%20(4).jpg?v=1610556731554">
+        <a-asset-item id="flower" src="https://cdn.glitch.com/39c57c54-528b-451c-8f18-e823cb6ec564%2F18366_Hinduism-Lotus_Flower_V1.obj?v=1610389553775"></a-asset-item>
+        <audio id="river1" src="https://cdn.glitch.com/39c57c54-528b-451c-8f18-e823cb6ec564%2F4.wav?v=1610541014279" preload="auto"></audio>
+        <audio id="river2" src="https://cdn.glitch.com/39c57c54-528b-451c-8f18-e823cb6ec564%2F7.wav?v=1610541018378" preload="auto"></audio>
+        <audio id="river3" src="https://cdn.glitch.com/39c57c54-528b-451c-8f18-e823cb6ec564%2F3.wav?v=1610541007437" preload="auto"></audio>
+        <audio id="river4" src="https://cdn.glitch.com/39c57c54-528b-451c-8f18-e823cb6ec564%2F5.wav?v=1610541018604" preload="auto"></audio>
+        <audio id="river5" src="https://cdn.glitch.com/39c57c54-528b-451c-8f18-e823cb6ec564%2F6.wav?v=1610541025540" preload="auto"></audio>
+        <audio id="river6" src="https://cdn.glitch.com/39c57c54-528b-451c-8f18-e823cb6ec564%2F2.wav?v=1610540998985" preload="auto"></audio>
+        <audio id="river7" src="https://cdn.glitch.com/39c57c54-528b-451c-8f18-e823cb6ec564%2F1.wav?v=1610540992736" preload="auto"></audio>
+        <audio id="river8" src="https://cdn.glitch.com/39c57c54-528b-451c-8f18-e823cb6ec564%2F8.wav?v=1610541025902" preload="auto"></audio>
+        <audio id="river9" src="https://cdn.glitch.com/39c57c54-528b-451c-8f18-e823cb6ec564%2F9.wav?v=1610541026916" preload="auto"></audio>
+      </a-assets>
+      
+      <!--lotus flowers-->
+      <a-entity obj-model="obj: #flower" material="color: #390099; opacity: 0.5" position="0 0 -5" scale="0.1 0.1 0.1" rotation="-70 0 0"
+                sound="src: #river1; on: mouseenter"
+                animation__mouseenter="property: components.material.material.opacity; type: opacity; to: 1; startEvents: mouseenter; dur: 500"
+                animation__mouseleave="property: components.material.material.opacity; type: opacity; to: 0.5; startEvents: mouseleave; dur: 600"></a-entity>
+      <a-entity obj-model="obj: #flower" material="color: #ffbd00; opacity: 0.5" position="-2.3 0 -1" scale="0.1 0.1 0.1" rotation="-90 0 0"
+                sound="src: #river2; on: mouseenter"
+                animation__mouseenter="property: components.material.material.opacity; type: opacity; to: 1; startEvents: mouseenter; dur: 500"
+                animation__mouseleave="property: components.material.material.opacity; type: opacity; to: 0.5; startEvents: mouseleave; dur: 600"></a-entity>
+      <a-entity obj-model="obj: #flower" material="color: #9e0059; opacity: 0.5" position="-3 0 -4" scale="0.1 0.1 0.1" rotation="-90 0 0"
+                sound="src: #river3; on: mouseenter"
+                animation__mouseenter="property: components.material.material.opacity; type: opacity; to: 1; startEvents: mouseenter; dur: 500"
+                animation__mouseleave="property: components.material.material.opacity; type: opacity; to: 0.5; startEvents: mouseleave; dur: 600"></a-entity>
+      <a-entity obj-model="obj: #flower" material="color: #ff5400; opacity: 0.5" position="1.7 0 -0.2" scale="0.1 0.1 0.1" rotation="-90 0 0"
+                sound="src: #river4; on: mouseenter"
+                animation__mouseenter="property: components.material.material.opacity; type: opacity; to: 1; startEvents: mouseenter; dur: 500"
+                animation__mouseleave="property: components.material.material.opacity; type: opacity; to: 0.5; startEvents: mouseleave; dur: 600"></a-entity>
+      <a-entity obj-model="obj: #flower" material="color: #db0909; opacity: 0.5" position="-8 2 4" scale="0.2 0.2 0.2" rotation="-60 120 0"
+                sound="src: #river5; on: mouseenter"
+                animation__mouseenter="property: components.material.material.opacity; type: opacity; to: 1; startEvents: mouseenter; dur: 500"
+                animation__mouseleave="property: components.material.material.opacity; type: opacity; to: 0.5; startEvents: mouseleave; dur: 600"></a-entity>
+      <a-entity obj-model="obj: #flower" material="color: #9bc53d; opacity: 0.5" position="4 0 2" scale="0.1 0.1 0.1" rotation="-120 60 150"
+                sound="src: #river6; on: mouseenter"
+                animation__mouseenter="property: components.material.material.opacity; type: opacity; to: 1; startEvents: mouseenter; dur: 500"
+                animation__mouseleave="property: components.material.material.opacity; type: opacity; to: 0.5; startEvents: mouseleave; dur: 600"></a-entity>
+      <a-entity obj-model="obj: #flower" material="color: #70c1b3; opacity: 0.5" position="-0.3 2.9 8" scale="0.17 0.17 0.17" rotation="-140 0 0"
+                sound="src: #river7; on: mouseenter"
+                animation__mouseenter="property: components.material.material.opacity; type: opacity; to: 1; startEvents: mouseenter; dur: 500"
+                animation__mouseleave="property: components.material.material.opacity; type: opacity; to: 0.5; startEvents: mouseleave; dur: 600"></a-entity>
+      
+      <!--nature spherical image-->
+      <a-sky src="#sky"></a-sky>
+      
+      <!--click image and sound start-->
+      <a-entity camera look-controls>
+        <a-image src="#click" width="3" height="2" position="0 1.6 -1" sound="src: url(https://cdn.glitch.com/39c57c54-528b-451c-8f18-e823cb6ec564%2Frelax.mp3?v=1610555166474); on: click"
+               animation="property: scale; to: 0 0 0; dur: 1500; easing: easeInQuint; startEvents: click"></a-image>
+      </a-entity>
+      
+    </a-scene>
+  </body>
+</html>
